@@ -1,0 +1,23 @@
+meta {
+  name: Health
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/users/2
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body.token: isUndefined
+}
+
+tests {
+  test("get user with id=2", function() {
+    const body = res.getBody();
+    expect(body.data.first_name).to.equal('Janet');
+  });
+}
