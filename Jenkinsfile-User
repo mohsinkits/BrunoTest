@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('verify installation') {
       steps {
+        sh 'npm install'
+        sh 'npm install -g @usebruno/cli'
         sh 'bru --version'
       }
     }
