@@ -1,0 +1,19 @@
+{
+  "name": "brunotest",
+  "version": "1.0.0",
+  "description": "Testing Bruno",
+  "main": "index.js",
+  "scripts": {
+    "test": "bru run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohsinkits/BrunoTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohsinkits/BrunoTest/issues"
+  },
+  "homepage": "https://github.com/mohsinkits/BrunoTest#readme"
+}
